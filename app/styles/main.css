@@ -1,0 +1,191 @@
+/* Space out content a bit */
+body {
+
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Page headers */
+.page-header {
+  text-align: center;
+  z-index: 100;
+}
+
+/* Nav style */
+
+.nav {
+  border: 1px solid black;
+  height: 150px;
+  width: 250px;
+  position: fixed;
+  margin-top: -40px;
+  background-color: black;
+  z-index: 100;    
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+}
+
+/* Music page */
+.music-sidebar {
+  height: 100vh;
+  width: 250px;
+  border: 1px solid black;
+  overflow: scroll;
+  margin-top: 40px;
+  position: absolute;
+}
+
+.music-sidebar-item {
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.music-sidebar-item:nth-child(odd) {
+  background-color: red; 
+}
+
+.music-sidebar-item:nth-child(even) {
+  background-color: blue; 
+}
+
+/* main content section for music view */
+.music-content-container {
+  margin-left: 350px;
+  border: 1px solid black;
+  width: 970px;
+  height: 800px;
+  position: absolute;
+  overflow: scroll;
+}
+
+.widget-placement {
+  position: absolute;
+  height: 402px;
+  width: 485px;
+  border: 1px solid black;
+}
+
+.track-info {
+  margin-top: 402px;
+  position: absolute;
+  width: 485px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.photo-orbit {
+  border: 1px solid black;
+  margin-left: 485px;
+  height: 552px;
+  width: 485px;
+}
+
+.music-video {
+  border: 1px solid black;
+  height: 400px;
+  width: 675px;
+  position: absolute;
+}
+
+.more-links {
+  border: 1px solid black;
+  margin-left: 675px;
+  height: 400px;
+  width: 295px;
+}
+
+/* Film Page */
+
+.film-sidebar {
+  height: 100vh;
+  width: 250px;
+  border: 1px solid black;
+  overflow: scroll;
+  margin-top: 60px;
+}
+
+.film-sidebar-item {
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+  position: relative; 
+}
+
+.film-sidebar-item:nth-child(odd) {
+  background-color: green; 
+}
+
+.film-sidebar-item:nth-child(even) {
+  background-color: yellow; 
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
